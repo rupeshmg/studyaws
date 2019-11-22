@@ -1,7 +1,0 @@
-[{
-    "name"      : "test",
-    "image"     : "023577096755.dkr.ecr.ap-southeast-1.amazonaws.com/dg-repository:latest",
-    "memory"    : 200,
-    "cpu"       : 10,
-    "essential" : true
-  }]
