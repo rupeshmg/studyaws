@@ -27,6 +27,10 @@ resource "aws_subnet" "dg_subnet1" {
   }
 }
 
+output "aws_subnet_dgsubnet1_id" {
+  value = "${aws_subnet.dg_subnet1.id}"
+}
+
 //Public Subnet 2
 resource "aws_subnet" "dg_subnet2" {
   vpc_id     = "${aws_vpc.default.id}"
@@ -35,6 +39,10 @@ resource "aws_subnet" "dg_subnet2" {
   tags {
     Name = "dg_subnet2"
   }
+}
+
+output "aws_subnet_dgsubnet2_id" {
+  value = "${aws_subnet.dg_subnet2.id}"
 }
 
 #Create internet gateway
